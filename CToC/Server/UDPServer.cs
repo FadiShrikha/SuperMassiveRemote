@@ -60,7 +60,7 @@ namespace SMR.Server
                 Accept?.Bind(CurrentComputerEndPoint);
 
             }
-
+            
             if (typeOfConnection == TypeOfConnection.Remote)
             {
                 Client = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp) { ExclusiveAddressUse = false };

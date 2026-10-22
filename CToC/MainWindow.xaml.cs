@@ -115,14 +115,11 @@ namespace SMR
         private void ConnectToRemoteBtn(object sender, RoutedEventArgs e)
         {
             var btn = sender as ToggleButton;
-
+            
             try
             {
-     
+
                 IPAddress ipofpc2 = IPAddress.Parse(this.IPofRemote.Text);
-
-                
-
                 if (btn != null && btn.IsChecked == true)
                 {
                     Server = new(TypeOfConnection.Remote);
